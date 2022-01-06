@@ -38,7 +38,7 @@
 
       const playNotes = (notes, secondsPerBeat) => {
         notes.forEach((noteNumber, index) => {
-          if (note !== -1) {
+          if (noteNumber !== -1) {
             let frequency = 220 * 2 ** (noteNumber / 12);
             let BeatToPlay = index + (index % 2) / 6;
             let timeToPlay = BeatToPlay * secondsPerBeat;
