@@ -12,6 +12,7 @@ let playTone = (frequency, timeToplay) => {
     let gain = audioctx.createGain(); // eslint-disable-line no-undef
     let noteLength = 0.5;
     osc.frequency.value = frequency;
+    
     osc.type = "sine";
     osc.connect(gain);
     gain.connect(audioctx.destination);
