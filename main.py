@@ -39,6 +39,9 @@ kick =  mixer.Sound('sounds\kick.WAV')
 crash =  mixer.Sound('sounds\crash.WAV')
 clap =  mixer.Sound('sounds\clap.WAV')
 tom  =  mixer.Sound('sounds\\tom.WAV')
+
+# hi_hat =  mixer.Sound('sounds/hi hat.WAV')
+# snare = mixer.Sound('sounds/snare.WAV') 
 pygame.mixer.set_num_channels(instruments * 3)
 
 def play_notes(): 
